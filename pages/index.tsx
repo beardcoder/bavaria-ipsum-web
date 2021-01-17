@@ -7,6 +7,7 @@ import Controls from '../components/Controls'
 import Header from '../components/Header'
 import styled from 'styled-components'
 import Footer from '../components/Footer'
+import { ToastContainer } from 'react-toastify'
 
 const Title = styled.h1`
   text-indent: -99999px;
@@ -17,13 +18,17 @@ const Title = styled.h1`
   background-image: url('/title.svg');
 `
 
-export const Home = (): JSX.Element => {
+type Pros = {
+  test?: boolean
+}
+
+export const Home = ({ test = false }: Pros): JSX.Element => {
   const [lenght, setLenght] = useState(3)
   const [paragraphs, setParagraphs] = useState(4)
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Bavaria Ipsum</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -48,12 +53,24 @@ export const Home = (): JSX.Element => {
           ></Slider>
         </Controls>
       </Header>
-
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <main>
         <div className="blindtext">
-          <NoSSR>
-            <Blindtext lenght={lenght} paragraphs={paragraphs}></Blindtext>
-          </NoSSR>
+          {!test && (
+            <NoSSR>
+              <Blindtext lenght={lenght} paragraphs={paragraphs}></Blindtext>
+            </NoSSR>
+          )}
         </div>
       </main>
 

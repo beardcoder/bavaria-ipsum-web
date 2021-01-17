@@ -3,6 +3,7 @@ import BavariaIpsum from '../lib/bavaria-ipsum'
 import { renderToStaticMarkup } from 'react-dom/server'
 import Clipboard from 'react-clipboard.js'
 import { BsTextLeft, BsCodeSlash } from 'react-icons/bs'
+import { toast } from 'react-toastify'
 
 type Props = {
   paragraphs: number
@@ -40,8 +41,14 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
     margin-bottom: 40px;
   `
 
+  const notify = () => toast.success('Text Kopiert')
+
   const Button = ({ className, children, text }) => (
-    <Clipboard className={className} data-clipboard-text={text}>
+    <Clipboard
+      onClick={notify}
+      className={className}
+      data-clipboard-text={text}
+    >
       {children}
     </Clipboard>
   )

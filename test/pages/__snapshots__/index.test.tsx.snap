@@ -3,117 +3,83 @@
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="jsx-2250570153 container"
+    class="jsx-3115018971 container"
   >
-    <main
-      class="jsx-2250570153"
+    <header
+      class="Header__Wrapper-sc-82l316-0 hFEnBr"
     >
       <h1
-        class="jsx-2250570153 title"
+        class="pages__Title-sc-1rar0h2-0 dFSGiB"
       >
-        Welcome to 
-        <a
-          class="jsx-2250570153"
-          href="https://nextjs.org"
-        >
-          Next.js!
-        </a>
+        Bavaria Ipsum
       </h1>
-      <p
-        class="jsx-2250570153 description"
-      >
-        Get started by editing 
-        <code
-          class="jsx-2250570153"
-        >
-          pages/index.tsx
-        </code>
-      </p>
-      <button
-        class="jsx-2250570153"
-      >
-        Test Button
-      </button>
       <div
-        class="jsx-2250570153 grid"
+        class="Controls__Wrapper-sc-21ji11-0 etClar"
       >
-        <a
-          class="jsx-2250570153 card"
-          href="https://nextjs.org/docs"
+        <div
+          class="Slider__Wrapper-sc-182smj2-0 cLQGzt"
         >
-          <h3
-            class="jsx-2250570153"
+          <label
+            class="Slider__Label-sc-182smj2-1 dupCEA"
+            for="lenght"
           >
-            Documentation →
-          </h3>
-          <p
-            class="jsx-2250570153"
+            Wia lang solls sei?
+          </label>
+          <div
+            class="Slider__InputWrapper-sc-182smj2-2 iJjtfI"
           >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-        <a
-          class="jsx-2250570153 card"
-          href="https://nextjs.org/learn"
+            <input
+              id="lenght"
+              max="7"
+              min="1"
+              type="range"
+              value="3"
+            />
+          </div>
+        </div>
+        <div
+          class="Slider__Wrapper-sc-182smj2-0 cLQGzt"
         >
-          <h3
-            class="jsx-2250570153"
+          <label
+            class="Slider__Label-sc-182smj2-1 dupCEA"
+            for="paragraphs"
           >
-            Learn →
-          </h3>
-          <p
-            class="jsx-2250570153"
+            Wia vui mechts ham?
+          </label>
+          <div
+            class="Slider__InputWrapper-sc-182smj2-2 iJjtfI"
           >
-            Learn about Next.js in an interactive course with quizzes!
-          </p>
-        </a>
-        <a
-          class="jsx-2250570153 card"
-          href="https://github.com/vercel/next.js/tree/master/examples"
-        >
-          <h3
-            class="jsx-2250570153"
-          >
-            Examples →
-          </h3>
-          <p
-            class="jsx-2250570153"
-          >
-            Discover and deploy boilerplate example Next.js projects.
-          </p>
-        </a>
-        <a
-          class="jsx-2250570153 card"
-          href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        >
-          <h3
-            class="jsx-2250570153"
-          >
-            Deploy →
-          </h3>
-          <p
-            class="jsx-2250570153"
-          >
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
+            <input
+              id="paragraphs"
+              max="10"
+              min="1"
+              type="range"
+              value="4"
+            />
+          </div>
+        </div>
       </div>
+    </header>
+    <div
+      class="Toastify"
+    />
+    <main
+      class="jsx-3115018971"
+    >
+      <div
+        class="jsx-3115018971 blindtext"
+      />
     </main>
     <footer
-      class="jsx-2250570153"
+      class="Footer__Wrapper-sc-13sxc4i-0 fVzfEB"
     >
       <a
-        class="jsx-2250570153"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        class="Footer__Link-sc-13sxc4i-1 fPsXMZ"
+        href="https://creativeworkspace.de"
         rel="noopener noreferrer"
         target="_blank"
       >
-        Powered by 
-        <img
-          alt="Vercel Logo"
-          class="jsx-2250570153 logo"
-          src="/vercel.svg"
-        />
+        Desinged and Developed with 🦄 and ☕ by Markus Sommer
       </a>
     </footer>
   </div>

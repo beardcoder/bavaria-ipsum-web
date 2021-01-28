@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import BavariaIpsum from '../lib/bavaria-ipsum'
+import bavariaIpsum from '@beardcoder/bavaria-ipsum'
 import { renderToStaticMarkup } from 'react-dom/server'
 import Clipboard from 'react-clipboard.js'
 import { BsTextLeft, BsCodeSlash } from 'react-icons/bs'
@@ -11,7 +11,7 @@ type Props = {
 }
 
 export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
-  const blindtext = BavariaIpsum({
+  const blindtext = bavariaIpsum({
     minSentenceWords: Math.ceil((lenght * 10) / 1.5),
     maxSentenceWords: Math.ceil(lenght * 10 * 1.5),
   }).generateParagraph(paragraphs)

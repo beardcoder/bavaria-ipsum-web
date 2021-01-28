@@ -26,15 +26,28 @@ exports[`Home page matches snapshot 1`] = `
             Wia lang solls sei?
           </label>
           <div
-            class="Slider__InputWrapper-sc-182smj2-2 iJjtfI"
+            class="Slider__InputWrapper-sc-182smj2-2 hYuoc"
           >
-            <input
-              id="lenght"
-              max="7"
-              min="1"
-              type="range"
-              value="3"
-            />
+            <div
+              class="Slider__InputValue-sc-182smj2-3 dhYaLC"
+            >
+              3
+            </div>
+            <div
+              class="css-10fcxrz-Slider"
+            >
+              <div
+                class="css-cdyzi2-Slider"
+                style="width: 33.33333333333333%;"
+              />
+              <div
+                style="position: absolute; transform: translate(-50%, -50%); left: 33.33333333333333%; top: 50%;"
+              >
+                <div
+                  class="css-2byy62-Slider"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -47,15 +60,28 @@ exports[`Home page matches snapshot 1`] = `
             Wia vui mechts ham?
           </label>
           <div
-            class="Slider__InputWrapper-sc-182smj2-2 iJjtfI"
+            class="Slider__InputWrapper-sc-182smj2-2 hYuoc"
           >
-            <input
-              id="paragraphs"
-              max="10"
-              min="1"
-              type="range"
-              value="4"
-            />
+            <div
+              class="Slider__InputValue-sc-182smj2-3 dhYaLC"
+            >
+              4
+            </div>
+            <div
+              class="css-10fcxrz-Slider"
+            >
+              <div
+                class="css-cdyzi2-Slider"
+                style="width: 33.33333333333333%;"
+              />
+              <div
+                style="position: absolute; transform: translate(-50%, -50%); left: 33.33333333333333%; top: 50%;"
+              >
+                <div
+                  class="css-2byy62-Slider"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

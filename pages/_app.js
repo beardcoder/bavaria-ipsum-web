@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import 'react-toastify/dist/ReactToastify.css'
+import 'normalize.css'
 import Head from 'next/head'
 
 const GlobalStyle = createGlobalStyle`

@@ -39,17 +39,17 @@ export const Home = ({ test = false }: Pros): JSX.Element => {
             label="Wia lang solls sei?"
             value={lenght}
             id="lenght"
-            min="1"
-            max="7"
-            onChange={(value) => setLenght(parseInt(value) ?? 4)}
+            min={1}
+            max={7}
+            onChange={(value) => setLenght(value ?? 4)}
           ></Slider>
           <Slider
             label="Wia vui mechts ham?"
             value={paragraphs}
             id="paragraphs"
-            min="1"
-            max="10"
-            onChange={(value) => setParagraphs(parseInt(value) ?? 4)}
+            min={1}
+            max={10}
+            onChange={(value) => setParagraphs(value ?? 4)}
           ></Slider>
         </Controls>
       </Header>
@@ -111,6 +111,14 @@ export const Home = ({ test = false }: Pros): JSX.Element => {
 
         * {
           box-sizing: border-box;
+        }
+
+        p:first-child {
+          margin-top: 0;
+        }
+
+        p:last-child {
+          margin-bottom: 0;
         }
       `}</style>
     </div>

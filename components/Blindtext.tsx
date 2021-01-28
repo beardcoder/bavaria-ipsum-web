@@ -30,7 +30,6 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
     font-size: 16px;
     max-width: 600px;
     padding: 30px;
-    border: 2px solid #333;
     margin-left: auto;
     margin-right: auto;
   `
@@ -38,7 +37,12 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
   const Buttons = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  `
+
+  const BlindtextWrapper = styled.div`
+    background-color: #f1f1f1;
+    padding: 20px;
   `
 
   const notify = () => toast.success('Text Kopiert')
@@ -82,7 +86,7 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
           Als HTML Kopieren
         </StyledButton>
       </Buttons>
-      {blindtextHtml}
+      <BlindtextWrapper>{blindtextHtml}</BlindtextWrapper>
     </Wrapper>
   )
 }

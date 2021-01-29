@@ -1,13 +1,29 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import 'react-toastify/dist/ReactToastify.css'
 import 'normalize.css'
+import '@fontsource/rubik'
+import '@fontsource/germania-one'
 import Head from 'next/head'
 
 const GlobalStyle = createGlobalStyle`
+  html,
   body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Rubik, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
+      line-height: 1.2
+  }
+
+  p {
+    line-height: 1.5
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 `
 

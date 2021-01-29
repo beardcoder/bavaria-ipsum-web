@@ -28,6 +28,7 @@
   "dependencies": {
     "@beardcoder/bavaria-ipsum": "^0.0.4",
     "@fontsource/germania-one": "^4.1.0",
+    "@fontsource/rubik": "^4.1.0",
     "@mpth/react-no-ssr": "^1.0.1",
     "lorem-ipsum": "^2.0.3",
     "next": "latest",

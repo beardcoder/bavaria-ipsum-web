@@ -9,13 +9,17 @@ import styled from 'styled-components'
 import Footer from '../components/Footer'
 import { ToastContainer } from 'react-toastify'
 
-const Title = styled.h1`
+const PageTitle = styled.h1`
   text-indent: -99999px;
-  margin-top: 40px;
+  margin-top: 20px;
   overflow: hidden;
-  width: 411px;
-  height: 184px;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 242px;
   background-image: url('/title.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 `
 
 type Pros = {
@@ -33,7 +37,7 @@ export const Home = ({ test = false }: Pros): JSX.Element => {
       </Head>
 
       <Header>
-        <Title>Bavaria Ipsum</Title>
+        <PageTitle>Bavaria Ipsum</PageTitle>
         <Controls>
           <Slider
             label="Wia lang solls sei?"
@@ -75,52 +79,6 @@ export const Home = ({ test = false }: Pros): JSX.Element => {
       </main>
 
       <Footer></Footer>
-
-      <style jsx>{`
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          text-decoration: none;
-          color: #121212;
-          justify-content: center;
-          align-items: center;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-
-        p:first-child {
-          margin-top: 0;
-        }
-
-        p:last-child {
-          margin-bottom: 0;
-        }
-      `}</style>
     </div>
   )
 }

@@ -6,6 +6,9 @@ type Props = {
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: auto;
   margin-bottom: auto;
 `

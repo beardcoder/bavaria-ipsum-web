@@ -13,14 +13,14 @@ type Props = {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  margin: 20px;
 `
 
 const Label = styled.label`
   color: #ffffff;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `
 
 const InputWrapper = styled.div`

@@ -3,24 +3,24 @@
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="jsx-3115018971 container"
+    class="container"
   >
     <header
       class="Header__Wrapper-sc-82l316-0 hFEnBr"
     >
       <h1
-        class="pages__Title-sc-1rar0h2-0 dFSGiB"
+        class="pages__PageTitle-sc-1rar0h2-0 hiMzZv"
       >
         Bavaria Ipsum
       </h1>
       <div
-        class="Controls__Wrapper-sc-21ji11-0 etClar"
+        class="Controls__Wrapper-sc-21ji11-0 kkEybc"
       >
         <div
-          class="Slider__Wrapper-sc-182smj2-0 cLQGzt"
+          class="Slider__Wrapper-sc-182smj2-0 tGdHq"
         >
           <label
-            class="Slider__Label-sc-182smj2-1 dupCEA"
+            class="Slider__Label-sc-182smj2-1 gPsQNR"
             for="lenght"
           >
             Wia lang solls sei?
@@ -51,10 +51,10 @@ exports[`Home page matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="Slider__Wrapper-sc-182smj2-0 cLQGzt"
+          class="Slider__Wrapper-sc-182smj2-0 tGdHq"
         >
           <label
-            class="Slider__Label-sc-182smj2-1 dupCEA"
+            class="Slider__Label-sc-182smj2-1 gPsQNR"
             for="paragraphs"
           >
             Wia vui mechts ham?
@@ -89,11 +89,9 @@ exports[`Home page matches snapshot 1`] = `
     <div
       class="Toastify"
     />
-    <main
-      class="jsx-3115018971"
-    >
+    <main>
       <div
-        class="jsx-3115018971 blindtext"
+        class="blindtext"
       />
     </main>
     <footer

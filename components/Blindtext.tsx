@@ -18,7 +18,7 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
 
   const blindtextHtml = (
     <>
-      {blindtext.map((line, i) => (
+      {blindtext.map((line: string, i: number | string) => (
         <p key={i}>{line}</p>
       ))}
     </>
@@ -36,6 +36,7 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
 
   const Buttons = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
   `
@@ -43,6 +44,8 @@ export const Blindtext = ({ lenght, paragraphs }: Props): JSX.Element => {
   const BlindtextWrapper = styled.div`
     background-color: #f1f1f1;
     padding: 20px;
+    font-family: 'Germania One';
+    font-size: 18px;
   `
 
   const notify = () => toast.success('Text Kopiert')
